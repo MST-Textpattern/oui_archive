@@ -1,0 +1,55 @@
+h1. oui_player_archive
+
+An Archive(.org) extension for oui_player.
+See the oui_player help for global config/tags informations.
+
+h2. Plugin requirements
+
+oui_player's minimum requirements:
+
+* "Textpattern CMS":http://textpattern.com/ 4.6+.
+* "oui_player":https://github.com/oui-textpattern/oui_player/ 2.+.
+
+h2. Recognised values for the @play@ attribute
+
+* *ID* (using @archive@ as provider.)
+* http(s):(www.)//archive.org/details/[*ID*]
+* http(s):(www.)//archive.org/embed/[*ID*]
+
+h2. Player size
+
+- @width@ :=
+The width of the player in pixels.
+*Default:* related plugin pref
+*Initial:* @640@ (use @500@ for a music player)
+*valid:* integer =:
+- @height@ :=
+*Default:* related plugin pref
+*Initial:* @480@ (use @30@ for a music player)
+*valid:* integer
+The height of the player in pixels. =:
+- @ratio@ :=
+The ratio used to calculate the missing value for the width or the height.
+*Default:* related plugin pref
+*Initial:* none
+*valid:* integer[@:@]integer =:
+
+h2. Player parameters (aplhabetical order)
+
+- @autoplay@ :=
+Specifies whether the initial video will automatically start to play when the player loads.
+*Default:* related plugin pref
+*Initial:* @0@
+*valid:* @0@ or @1@ =:
+- @playlist@ :=
+Specifies whether to display the next titles if the item to play is a playlist.
+*Default:* related plugin pref
+*Initial:* @0@
+*valid:* @0@ or @1@ =:
+- @poster@ :=
+Specifies the URL of an image to display as the starting shot.
+*Default:* related plugin pref
+*Initial:* none
+*valid:* image URL =:
+
+p(alert-block information). %(ui-icon ui-icon-info).% More informations on "this Archive webpage":https://archive.org/help/video.php.
