@@ -65,10 +65,6 @@ namespace Oui\Player {
             );
         }
 
-        global $event;
-
-        if (txpinterface === 'admin' && ($event === 'prefs' || $event === 'plugin_prefs.oui_player_archive')) {
-            Archive::getInstance();
-        }
+        register_callback('Oui\Player\Archive::getProvider', 'oui_player', 'plug_providers');
     }
 }
