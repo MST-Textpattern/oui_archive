@@ -1,8 +1,8 @@
 #Default language, en-us, en-gb
 #@admin
 oui_player_provider_archive => Archive
-oui_player_archive => Archive player (oui_player_archive)
-oui_player_archive_prefs => Display the Archive player prefs
+oui_player_archive => Archive player
+oui_player_archive_prefs => Display the Archive player preferences
 oui_player_archive_width => Player width
 oui_player_archive_height => Player height
 oui_player_archive_ratio => Player ratio by default

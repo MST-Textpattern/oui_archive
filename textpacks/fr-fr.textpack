@@ -1,7 +1,7 @@
 #@language fr-fr
 #@admin
 oui_player_provider_archive => Archive
-oui_player_archive => Lecteur Archive (oui_player_archive)
+oui_player_archive => Lecteur Archive
 oui_player_archive_prefs => Afficher les préférences du lecteur Archive
 oui_player_archive_width => Largeur du lecteur
 oui_player_archive_height => Hauteur du lecteur
