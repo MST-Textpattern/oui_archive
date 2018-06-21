@@ -65,6 +65,5 @@ namespace Oui\Player {
             );
         }
 
-        register_callback('Oui\Player\Archive::getProvider', 'oui_player', 'plug_providers');
     }
 }
