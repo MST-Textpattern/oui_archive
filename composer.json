@@ -1,5 +1,5 @@
 {
-    "name": "oui/oui_player_archive",
+    "name": "oui/oui_archive",
     "description": "Archive extension for oui_player",
     "keywords": [
         "textpattern",
@@ -8,7 +8,7 @@
         "video",
         "archive"
     ],
-    "homepage": "https://github.com/NicolasGraph/oui_player_archive",
+    "homepage": "https://github.com/NicolasGraph/oui_archive",
     "license": "GPL-2.0-only",
     "type": "textpattern-plugin",
     "authors": [
@@ -19,8 +19,8 @@
         }
     ],
     "support": {
-        "issues": "https://github.com/NicolasGraph/oui_player_archive/issues",
-        "source": "https://github.com/NicolasGraph/oui_player_archive"
+        "issues": "https://github.com/NicolasGraph/oui_archive/issues",
+        "source": "https://github.com/NicolasGraph/oui_archive"
     },
     "require": {
         "textpattern/lock": "4.6.*",

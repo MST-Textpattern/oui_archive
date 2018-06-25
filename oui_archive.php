@@ -1,11 +1,11 @@
 <?php
 
 /*
- * This file is part of oui_player_archive,
+ * This file is part of oui_archive,
  * a oui_player v2+ extension to easily embed
  * Archive.org customizable media players in Textpattern CMS.
  *
- * https://github.com/NicolasGraph/oui_player_archive
+ * https://github.com/NicolasGraph/oui_archive
  *
  * Copyright (C) 2018 Nicolas Morand
  *
