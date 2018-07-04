@@ -44,15 +44,9 @@ namespace Oui {
             protected static $src = '//archive.org/';
             protected static $glue = array('embed/', '&amp;', '&amp;');
             protected static $dims = array(
-                'width'    => array(
-                    'default' => '640',
-                ),
-                'height'   => array(
-                    'default' => '480',
-                ),
-                'ratio'    => array(
-                    'default' => '',
-                ),
+                'width'  => '640',
+                'height' => '480',
+                'ratio'  => '',
             );
             protected static $params = array(
                 'autoplay' => array(
