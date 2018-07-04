@@ -71,13 +71,3 @@ namespace Oui {
         }
     }
 }
-
-namespace {
-    function oui_archive($atts) {
-        return oui_player(array_merge(array('provider' => 'archive'), $atts));
-    }
-
-    function oui_if_archive($atts, $thing) {
-        return oui_if_player(array_merge(array('provider' => 'archive'), $atts), $thing);
-    }
-}
