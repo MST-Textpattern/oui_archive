@@ -36,10 +36,8 @@ namespace Oui {
         class Archive extends Provider
         {
             protected static $patterns = array(
-                'unknown' => array(
-                    'scheme' => '#^(http|https)://(www\.)?archive\.org/(details|embed)/([^&?/]+)$#i',
-                    'id'     => '4',
-                ),
+                'scheme' => '#^(http|https)://(www\.)?archive\.org/(details|embed)/([^&?/]+)$#i',
+                'id'     => '4',
             );
             protected static $src = '//archive.org/';
             protected static $glue = array('embed/', '&amp;', '&amp;');
