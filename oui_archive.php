@@ -35,6 +35,7 @@ namespace Oui {
 
         class Archive extends Provider
         {
+            protected static $mediaType = 'media';
             protected static $patterns = array(
                 'scheme' => '#^(http|https)://(www\.)?archive\.org/(details|embed)/([^&?/]+)$#i',
                 'id'     => '4',
