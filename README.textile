@@ -1,5 +1,11 @@
 h1. oui_archive
 
+* "Introduction":#introduction
+* "Plugin management":#plugin-management
+* "Tags and parameters":#tags-and-parameters
+* "Examples":#examples
+* "Credits":#credits
+
 h2. Introduction
 
 "oui_archive":https://github.com/NicolasGraph/oui_archive is a "oui_player":https://github.com/NicolasGraph/oui_player v2+ extension to easily embed "Archive":https://archive.org/ provided medias in "Textpattern":https://textpattern.com/ powered websites.
