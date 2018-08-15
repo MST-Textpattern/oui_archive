@@ -29,37 +29,41 @@
  * @package Oui\Player
  */
 
-namespace Oui {
+namespace Oui;
 
-    if (class_exists('Oui\Provider')) {
+if (class_exists('Oui\Provider')) {
 
-        class Archive extends Provider
-        {
-            protected static $patterns = array(
-                'scheme' => '#^(http|https)://(www\.)?archive\.org/(details|embed)/([^&?/]+)$#i',
-                'id'     => '4',
-            );
-            protected static $src = '//archive.org/';
-            protected static $glue = array('embed/', '&amp;', '&amp;');
-            protected static $dims = array(
-                'width'  => '640',
-                'height' => '480',
-                'ratio'  => '',
-            );
-            protected static $params = array(
-                'autoplay' => array(
-                    'default' => '0',
-                    'valid'   => array('0', '1'),
-                ),
-                'playlist' => array(
-                    'default' => '0',
-                    'valid'   => array('0', '1'),
-                ),
-                'poster'   => array(
-                    'default' => '',
-                    'valid'   => 'url',
-                ),
-            );
-        }
+    class Archive extends Provider
+    {
+        protected static $mediaType = 'media';
+        protected static $srcBase = '//archive.org/';
+        protected static $srcGlue = array('embed/', '&amp;', '&amp;');
+        protected static $iniDims = array(
+            'width'      => '640',
+            'height'     => '480',
+            'ratio'      => '',
+            'responsive' => array(
+                'default' => 'false',
+                'valid'   => array('true', 'false'),
+            ),
+        );
+        protected static $iniParams = array(
+            'autoplay' => array(
+                'default' => '0',
+                'valid'   => array('0', '1'),
+            ),
+            'playlist' => array(
+                'default' => '0',
+                'valid'   => array('0', '1'),
+            ),
+            'poster'   => array(
+                'default' => '',
+                'valid'   => 'url',
+            ),
+        );
+        protected static $mediaPatterns = array(
+            'scheme' => '#^https?://(www\.)?archive\.org/(details|embed)/([^&?/]+)$#i',
+            'id'     => '3',
+        );
     }
 }
