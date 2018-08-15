@@ -39,9 +39,13 @@ if (class_exists('Oui\Provider')) {
         protected static $srcBase = '//archive.org/';
         protected static $srcGlue = array('embed/', '&amp;', '&amp;');
         protected static $iniDims = array(
-            'width'  => '640',
-            'height' => '480',
-            'ratio'  => '',
+            'width'      => '640',
+            'height'     => '480',
+            'ratio'      => '',
+            'responsive' => array(
+                'default' => 'false',
+                'valid'   => array('true', 'false'),
+            ),
         );
         protected static $iniParams = array(
             'autoplay' => array(
