@@ -31,9 +31,9 @@
 
 namespace Oui;
 
-if (class_exists('Oui\Provider')) {
+if (class_exists('Oui\Player\Provider')) {
 
-    class Archive extends Provider
+    class Archive extends Player\Provider
     {
         protected static $mediaType = 'media';
         protected static $srcBase = '//archive.org/';
