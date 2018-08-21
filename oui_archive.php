@@ -33,7 +33,7 @@ namespace Oui;
 
 if (class_exists('Oui\Player\Provider')) {
 
-    class Archive extends Player\Provider
+    class Archive extends Player\Embed
     {
         protected static $mediaType = 'media';
         protected static $srcBase = '//archive.org/';
